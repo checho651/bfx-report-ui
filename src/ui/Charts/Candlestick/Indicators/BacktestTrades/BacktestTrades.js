@@ -56,7 +56,7 @@ class BacktestTrades {
         break
       }
     }
-    return trades.slice(newStart, newEnd)
+    return trades.slice(newStart, newEnd + 1) // End not included.
   }
 
   setSeriesData(candles) {
